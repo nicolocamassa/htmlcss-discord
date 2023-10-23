@@ -10,20 +10,10 @@
 
 header{
     height: 85px; 
-
-    display: flex; 
-    justify-content: center;
-    align-items: center;
-
     font-size: 18px;
 }
 
-.logo{
-    vertical-align: middle;
-}
-
 .row{
-    width: 100%;
     height: 100%;
 
     /* Allineamento orizzontale. */
@@ -41,20 +31,17 @@ header{
 }
 
 /* HEADER */
-.style-header{
+.header-flex{
     display: flex;
-    align-items: center;
 }
 
 .col-10{
     width: 240px;
-    height: 50px;
 }
 
 /* Colonna menù centrale. */
 .col-710{
     width: 710px;
-    height: 50px;
     justify-content: center;
 }
 
@@ -67,7 +54,7 @@ header{
     /* col-300 */
 }
 
-.height-83-col{
+.height-83-col{ /* TO-DO: una volta aggiunto il contenuto RIMUOVERE */
     height: 83%;
 
     display: flex;
@@ -89,7 +76,6 @@ header{
     width: 100%;
 
 }
-
 
 .col-w65{
     width: 50%;
@@ -174,15 +160,11 @@ li{
 /* DIMENSIONI RIPETUTE PER TUTTE LE SECTION ANCHE FOOTER */
 section{
     width: 100%;
-    height: 1040px;
+    height: 770px;
 }
 
 section:nth-child(1){
     height: 530px;
-}
-
-section:nth-child(2){
-    height: 770px;
 }
 
 section:nth-child(3){
@@ -219,7 +201,6 @@ footer section{
     font-size: 40px;
 
     color: white;
-    font-weight: 300;
 }
 
 .main-descr{
@@ -232,22 +213,21 @@ footer section{
     margin-top: 25px;
     font-weight: 300;
 }
+
+.btn-style{
+    border: none; 
+    font-size: 23px; 
+    border-radius: 100px;
+    padding: 10px 25px; 
+}
 /* TO-DO: vedere vaolori ripetuti */
 .main-download-btn{
-    border: none; /* Ripetuto */
-    font-size: 23px; /* Ripetuto */
-    border-radius: 100px; /* Ripetuto */
     background-color: white;
-    padding: 10px 25px; /* Ripetuto */
 }
 
 .main-open-btn{
-    border: none;
-    font-size: 23px;
-    border-radius: 100px;
+
     background-color: rgb(33, 33, 33);
-    padding: 10px 25px; 
- 
     color: #ffffff;
 }
 
