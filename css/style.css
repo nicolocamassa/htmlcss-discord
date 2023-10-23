@@ -4,7 +4,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: sans-serif;
     font-family: 'Inter', sans-serif;
     letter-spacing: -1px;
 }
@@ -70,8 +69,16 @@ header{
 
 .height-83-col{
     height: 83%;
+
+    display: flex;
+    justify-content: center;
+    vertical-align: middle;
     /* col-83 */
     /* col-w65 */
+}
+
+.item-1{
+    width: 80%;
 }
 
 .col-80{
@@ -80,12 +87,12 @@ header{
 
 .col-83{
     width: 100%;
-    background-color: #1E90FF;
+
 }
 
+
 .col-w65{
-    width: 65%;
-    background-color: #FFC0CB;
+    width: 50%;
 }
 
 .col-92{
@@ -113,6 +120,10 @@ footer .col-300{
 .content{
     font-family: sans-serif;
     margin-left: 10px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .margin-main{
@@ -126,6 +137,16 @@ li{
     margin-right: 30px;
     font-weight: 600;
     color: white;
+}
+
+.section-title{
+    font-size: 50px;
+    color: #23272A;
+}
+
+.section-1-p{
+    margin-top: 30px;
+    font-size: 23px;
 }
 
 /* Colonna LOGIN. */
@@ -153,11 +174,15 @@ li{
 /* DIMENSIONI RIPETUTE PER TUTTE LE SECTION ANCHE FOOTER */
 section{
     width: 100%;
-    height: 640px;
+    height: 1040px;
 }
 
 section:nth-child(1){
     height: 530px;
+}
+
+section:nth-child(2){
+    height: 770px;
 }
 
 section:nth-child(3){
