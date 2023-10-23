@@ -48,31 +48,13 @@ header{
 
 /* COLONNE */
 /* Colonne piccole laterali. */
-.height-92-col{
-    height: 100%;
-    /* col-92 */
-    /* col-300 */
-}
-
-.height-83-col{ /* TO-DO: una volta aggiunto il contenuto RIMUOVERE */
-    height: 83%;
-
-    display: flex;
-    vertical-align: middle;
-    flex-direction: column;
-    align-items: center;
-    /* col-83 */
-    /* col-w65 */
-}
 
 .item-1{
  width: 85%;
 
 }
 
-.col-80{
-    height: 80%;
-}
+
 
 .col-83{
     width: 100%;
@@ -140,7 +122,6 @@ footer .col-300{
 }
 
 .bigger-col{
-    height: 90%;
     text-align: center;
 }
 
@@ -149,10 +130,18 @@ footer .col-300{
     font-size: 30px;
     margin-top: 40px;
     margin-bottom: 10px;
+    display: block;
+    
 
     background-image: url(../img/stars.svg);
     background-repeat: no-repeat;
     background-size: 100%;
+}
+
+.centered-section-title-2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .item-big{
@@ -311,7 +300,7 @@ footer section:nth-child(1){
 
 /* footer */
 .footer-section{
-    height: 120px;
+    padding: 30px;
     width: 100%;
     background-color: #23272A;
 }
@@ -322,7 +311,6 @@ footer section:nth-child(1){
     align-items: center;
     flex-direction: row;
 
-    height: 75%;
     font-size: 22px;
 
 }
@@ -342,5 +330,5 @@ div .col-300 ul li:nth-child(1){
     3. Aggiungere i commenti
     4. Rimuovere tutti i parametri ripetuti e inutili
     5. Aggiungere le wave
-    6. Correggere sezione lingue
+    6. Modificare l'ultimo hr
     */
