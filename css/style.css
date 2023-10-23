@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
+
+/* Parametri comuni per l'intera pagina */
+/*___________________________________________________________ */
 *{
     margin: 0;
     padding: 0;
@@ -8,68 +11,51 @@
     letter-spacing: -1px;
 }
 
-header{
-    height: 85px; 
-    font-size: 18px;
-}
-
 .row{
     height: 100%;
-
     /* Allineamento orizzontale. */
     display: flex; 
     justify-content: center;
     align-items: center;
 }
 
-.row-end{
-    align-items: end;
-}
+.content{
+    font-family: sans-serif;
+    margin-left: 10px;
 
-.dashed-border{
-    border: dashed 2px black; 
-}
-
-/* HEADER */
-.header-flex{
     display: flex;
-}
-
-.col-10{
-    width: 240px;
-}
-
-/* Colonna menù centrale. */
-.col-710{
-    width: 710px;
+    flex-direction: column;
     justify-content: center;
 }
 
+.container{
+    max-width: 1190px;
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+}
+/*___________________________________________________________ */
 
-/* COLONNE */
-/* Colonne piccole laterali. */
+
+/* HEADER */
+.header-flex{
+    height: 85px; 
+    font-size: 18px;
+    display: flex;
+}
+/*___________________________________________________________ */
+
+.row-end{
+    align-items: end;
+}
 
 .item-1{
  width: 85%;
 
 }
 
-
-
-.col-83{
-    width: 100%;
-
-}
-
-.col-w65{
-    width: 50%;
-}
-
-.col-92{
-    width: 110%;
-}
 .dropdown-arrow{
-    color: wheat;
+    color: rgb(255, 255, 255);
 }
 
 .language{
@@ -101,29 +87,14 @@ header{
     vertical-align: middle;
 }
 
-footer .col-300{
-    flex-direction: column;
-}
 
-.col-300{
-    width: 65%;
-    display: flex;
-    flex-direction: column;
-
-}
-
-.footer-margin-column{
-    margin-top: 20px;
-}
 
 .footer-title{
     color: #7289DA;
     font-size: 40px;
 }
 
-.bigger-col{
-    text-align: center;
-}
+
 
 .section-title-2{
     padding: 20px;
@@ -148,14 +119,7 @@ footer .col-300{
     margin-top: 20px;
 }
 /* Testo all'interno delle colonne.*/
-.content{
-    font-family: sans-serif;
-    margin-left: 10px;
 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
 
 .margin-main{
     margin-top: 30px;
@@ -194,27 +158,86 @@ li{
     align-items: center;
 }
 
-.login-btn{
+
+/* Colonne */
+/*___________________________________________________________ */
+.col-10{
+    width: 240px;
+}
+
+/* Spazio tra le scritte dell'elenco del footer */
+div .col-300 ul li{
+    margin-bottom: 15px;
+}
+
+/* Titolo dell'elenco del footer */
+div .col-300 ul li:nth-child(1){
+    margin-top: 20px;
+    color: #7289DA;
+    font-weight: 700;
+}
+
+/* Colonna del testo */
+.col-83{
+    width: 100%;
+}
+
+/* Colonna delle immagini */
+.col-w65{
+    width: 50%;
+}
+
+/* Colonna footer più grande */
+.col-92{
+    width: 110%;
+    margin-top: 35px;
+}
+
+/* Colonna footer */
+.col-300{
+    margin-top: 30px;
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.footer-margin-column{
+    margin-top: 20px;
+}
+
+.bigger-col{
+    text-align: center;
+}
+/*___________________________________________________________ */
+
+
+
+
+/* Stile dei bottoni */
+/*___________________________________________________________ */
+.btn-common{
     padding: 10px 15px;
     border: none;
     border-radius: 100px;
-
-    font-weight: 600;
-    font-size: 13px;
-
-    color: #626262;
 }
 
-.margin-login{
-    margin-right: 10px;
+.btn-l{
+    margin-top: 25px;
+    font-size: 23px; 
 }
 
-.center-content-y{
-    justify-content: center;
+.main-open-btn{
+    background-color: rgb(33, 33, 33);
+    color: #ffffff;
 }
-/*---------------------------------------- */
-/* Main Style */
-/* DIMENSIONI RIPETUTE PER TUTTE LE SECTION ANCHE FOOTER */
+
+.purple-btn{
+    background-color: #97a8e8;
+    color: #ffffff;
+}
+/*___________________________________________________________ */
+
 section{
     width: 100%;
     height: 790px;
@@ -255,13 +278,6 @@ footer section:nth-child(1){
     margin-left: 10px;
 }
 
-.container{
-    max-width: 1190px;
-    height: 100%;
-    width: 100%;
-    margin: 0 auto;
-}
-
 .sm-cont{
     max-width: 850px;
     text-align: center;
@@ -274,28 +290,6 @@ footer section:nth-child(1){
     margin-top: 50px;
     font-weight: 400;
     font-size: 23px;
-}
-
-.btn-section{
-    margin-top: 25px;
-    font-weight: 300;
-}
-
-.btn-style{
-    border: none; 
-    font-size: 23px; 
-    border-radius: 100px;
-    padding: 10px 25px; 
-}
-
-.main-download-btn{
-    background-color: white;
-}
-
-.main-open-btn{
-
-    background-color: rgb(33, 33, 33);
-    color: #ffffff;
 }
 
 /* footer */
@@ -315,20 +309,14 @@ footer section:nth-child(1){
 
 }
 
-div .col-300 ul li{
-    margin-bottom: 10px;
+.wave-top{
+    position: absolute;
+    width: 100%;
+    margin-top: -100px;
 }
 
-div .col-300 ul li:nth-child(1){
-    margin-top: 20px;
-    color: #7289DA;
-    font-weight: 700;
+.wave-bottom{
+    width: 100%;
+
+    transform: scaleY(-1);
 }
-/* TO-DO: 
-    1. Gesitre meglio le dimensioni 
-    2. Rimuovere le altezze
-    3. Aggiungere i commenti
-    4. Rimuovere tutti i parametri ripetuti e inutili
-    5. Aggiungere le wave
-    6. Modificare l'ultimo hr
-    */
