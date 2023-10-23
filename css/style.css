@@ -49,7 +49,7 @@ header{
 /* COLONNE */
 /* Colonne piccole laterali. */
 .height-92-col{
-    height: 92%;
+    height: 100%;
     /* col-92 */
     /* col-300 */
 }
@@ -85,18 +85,58 @@ header{
 
 .col-92{
     width: 110%;
-    background-color: #F08080;
-    margin-bottom:  30px;
+}
+.dropdown-arrow{
+    color: wheat;
+}
+
+.language{
+    display: flex;
+    margin-top: 30px;
+    align-items: center;
+}
+
+.language-flag{
+    width: 7%;
+    vertical-align: middle;
+}
+
+.social{
+    height:fit-content;
+    fill: #ffffff;
+    margin-top: 20px;
+
+    display: flex;
+    align-items: center;
+}
+
+.margin-social-ico{
+    margin-right: 20px;
+}
+
+.italian{
+    margin-left: 10px;
+    vertical-align: middle;
 }
 
 footer .col-300{
-    background-color: #20B2AA;
+    flex-direction: column;
 }
 
 .col-300{
     width: 65%;
-    background-color: #FFC0CB;
-    margin-bottom:  30px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.footer-margin-column{
+    margin-top: 20px;
+}
+
+.footer-title{
+    color: #7289DA;
+    font-size: 40px;
 }
 
 .bigger-col{
@@ -135,10 +175,13 @@ footer .col-300{
 /* Menù link. */
 li{
     list-style: none;
-    display: inline-block; 
     margin-right: 30px;
     font-weight: 600;
     color: white;
+}
+
+.inline-block-menu{
+    display: inline-block;
 }
 
 .section-title{
@@ -154,6 +197,12 @@ li{
 /* Colonna LOGIN. */
 .login-align{
     justify-content: flex-end; 
+}
+
+.logo-footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .login-btn{
@@ -203,8 +252,18 @@ section:nth-child(5){
 
 footer section:nth-child(1){
     width: 100%;
-    height: 700px;
+    height: auto;
     background-color: #23272A
+}
+
+.align-items-row{
+    align-items: normal;
+    margin-bottom: 20px;
+}
+
+.language-name{
+    color: white;
+    margin-left: 10px;
 }
 
 .container{
@@ -261,22 +320,27 @@ footer section:nth-child(1){
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-direction: row;
 
     height: 75%;
     font-size: 22px;
 
-    background-color: #7FFFD4;
 }
 
-.bg-style{
-    background-color: #FFB6C1;
-    padding: 8px 10px;
-    bottom: 0;
+div .col-300 ul li{
+    margin-bottom: 10px;
 }
 
+div .col-300 ul li:nth-child(1){
+    margin-top: 20px;
+    color: #7289DA;
+    font-weight: 700;
+}
 /* TO-DO: 
     1. Gesitre meglio le dimensioni 
     2. Rimuovere le altezze
     3. Aggiungere i commenti
     4. Rimuovere tutti i parametri ripetuti e inutili
+    5. Aggiungere le wave
+    6. Correggere sezione lingue
     */
